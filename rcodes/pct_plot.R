@@ -1,0 +1,28 @@
+# Set working directory
+setwd("../data/")
+
+# Load packages
+library(ggplot2)
+library(grid)
+library(analogue)
+
+
+# Import data set
+raw_data <-
+  read.csv(file = "LL2_pollen_raw_data.csv", head = TRUE, sep = ",")
+
+# Remove the total counts and spikes
+core <- raw_data[, c(8:ncol(raw_data))]
+
+# Define y axis
+ids <- raw_data$sample.ID
+
+# Filt the data above given occurance
+core.fltd <- chooseTaxa(core, max.abun = 10)
+
+# Draw Palaeoecological Stratigraphic Diagram
+Stratiplot(ids ~ .,
+           core.fltd,
+           sort = NULL,
+           type = 'poly',
+           ylab = 'Sample ID')

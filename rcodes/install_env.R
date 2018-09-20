@@ -1,0 +1,6 @@
+print("Installing the latest version of required packages:")
+install.packages("tidyverse")
+install.packages("rioja")
+install.packages("vegan")
+install.packages("analogue")
+install.packages("neotoma")
