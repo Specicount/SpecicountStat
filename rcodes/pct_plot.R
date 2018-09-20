@@ -1,5 +1,5 @@
 # Set working directory
-setwd("../data/")
+# setwd("../data/")
 
 # Load packages
 library(ggplot2)
