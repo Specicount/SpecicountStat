@@ -12,6 +12,7 @@ output: html_document
 2. gridExtra [v2.3]
 3. analogue
 4. vegan
+5. dplyr
 
 ## Data Format
 The data must in particular format.
