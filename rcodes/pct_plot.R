@@ -2,8 +2,8 @@
 # setwd("../data/")
 
 # Load packages
-library(ggplot2)
-library(grid)
+# library(ggplot2)
+# library(grid)
 library(analogue)
 
 # Import raw data set
@@ -13,6 +13,7 @@ raw_data <-
 # Generate percentage data using raw data
 pct_data <- raw_data[, c(0:7)]
 # Count the pollens using sum !!Note that it is different from the total column
+# Ref: https://quantpalaeo.wordpress.com/2018/04/29/how-to-calculate-percent-from-counts-in-r/
 pct_data$count.sum <- rowSums(raw_data[, c(8:ncol(raw_data))])
 core <- raw_data[, c(8:ncol(raw_data))]
 core_pct <- core / rowSums(core)*100
