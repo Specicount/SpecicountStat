@@ -1,0 +1,1555 @@
+
+<!-- saved from url=(0060)https://websites.pmc.ucsc.edu/~mclapham/Rtips/ordination.htm -->
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="ProgId" content="Word.Document">
+<meta name="Generator" content="Microsoft Word 14">
+<meta name="Originator" content="Microsoft Word 14">
+<link rel="File-List" href="https://websites.pmc.ucsc.edu/~mclapham/Rtips/ordination_files/filelist.xml">
+<link rel="Edit-Time-Data" href="https://websites.pmc.ucsc.edu/~mclapham/Rtips/ordination_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>mclapham</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>mclapham</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>893</o:TotalTime>
+  <o:Created>2012-05-27T19:46:00Z</o:Created>
+  <o:LastSaved>2012-05-27T19:46:00Z</o:LastSaved>
+  <o:Pages>5</o:Pages>
+  <o:Words>1899</o:Words>
+  <o:Characters>10830</o:Characters>
+  <o:Lines>90</o:Lines>
+  <o:Paragraphs>25</o:Paragraphs>
+  <o:CharactersWithSpaces>12704</o:CharactersWithSpaces>
+  <o:Version>14.00</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel="themeData" href="https://websites.pmc.ucsc.edu/~mclapham/Rtips/ordination_files/themedata.thmx">
+<link rel="colorSchemeMapping" href="https://websites.pmc.ucsc.edu/~mclapham/Rtips/ordination_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="267">
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 9"/>
+  <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="59" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Table Grid"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Helvetica;
+	panose-1:2 11 6 4 2 2 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-format:other;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:Helvetica;
+	panose-1:2 11 6 4 2 2 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-format:other;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-520092929 1073786111 9 0 415 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-520081665 -1073717157 41 0 66047 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+a:link, span.MsoHyperlink
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:blue;
+	mso-themecolor:hyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:purple;
+	mso-themecolor:followedhyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+code
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+pre
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"HTML Preformatted Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-language:EN-US;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-language:EN-US;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-language:EN-US;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-language:EN-US;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Balloon Text";
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-ascii-font-family:Tahoma;
+	mso-hansi-font-family:Tahoma;
+	mso-bidi-font-family:Tahoma;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:438330285;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-173784530 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l0:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l0:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l0:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l1
+	{mso-list-id:957027165;
+	mso-list-type:hybrid;
+	mso-list-template-ids:590218062 -1952142736 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l1:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:30.0pt;
+	text-indent:-.25in;}
+@list l1:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:66.0pt;
+	text-indent:-.25in;}
+@list l1:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:102.0pt;
+	text-indent:-9.0pt;}
+@list l1:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:138.0pt;
+	text-indent:-.25in;}
+@list l1:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:174.0pt;
+	text-indent:-.25in;}
+@list l1:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:210.0pt;
+	text-indent:-9.0pt;}
+@list l1:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:246.0pt;
+	text-indent:-.25in;}
+@list l1:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:282.0pt;
+	text-indent:-.25in;}
+@list l1:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:318.0pt;
+	text-indent:-9.0pt;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang="EN-US" link="blue" vlink="purple" style="tab-interval:.5in">
+
+<div class="WordSection1">
+
+<p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-bidi-font-family:Helvetica">Ordination
+in R<o:p></o:p></span></b></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal" style="margin-bottom:12.0pt"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica">This page covers the R functions to perform
+multivariate ordination, including some methods beyond the default <span class="SpellE">biplots</span> for displaying your results graphically.<span style="mso-spacerun:yes">� </span>Some of these methods will use functions in
+the vegan package, which you should load and install (see <a href="http://www.pmc.ucsc.edu/~mclapham/Rtips/packages.htm">here</a> if you
+haven�t loaded packages before).<span style="mso-spacerun:yes">� </span>The
+following four major ordination methods are covered:<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpFirst" style="margin-left:30.0pt;mso-add-space:
+auto;text-indent:-.25in;line-height:200%;mso-list:l1 level1 lfo2"><!--[if !supportLists]--><span style="font-size:11.0pt;line-height:200%;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Helvetica;mso-bidi-font-family:Helvetica"><span style="mso-list:Ignore">1.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;
+</span></span></span><!--[endif]--><span style="font-size:11.0pt;line-height:200%;
+font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-bidi-font-family:Helvetica">Principal
+Components Analysis (PCA)<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:30.0pt;mso-add-space:
+auto;text-indent:-.25in;line-height:200%;mso-list:l1 level1 lfo2"><!--[if !supportLists]--><span style="font-size:11.0pt;line-height:200%;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Helvetica;mso-bidi-font-family:Helvetica"><span style="mso-list:Ignore">2.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;
+</span></span></span><!--[endif]--><span style="font-size:11.0pt;line-height:200%;
+font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-bidi-font-family:Helvetica">Correspondence
+Analysis (CA) and <span class="SpellE">Detrended</span> Correspondence Analysis
+(DCA)<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-left:30.0pt;mso-add-space:
+auto;text-indent:-.25in;line-height:200%;mso-list:l1 level1 lfo2"><!--[if !supportLists]--><span style="font-size:11.0pt;line-height:200%;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Helvetica;mso-bidi-font-family:Helvetica"><span style="mso-list:Ignore">3.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;
+</span></span></span><!--[endif]--><span style="font-size:11.0pt;line-height:200%;
+font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-bidi-font-family:Helvetica">Principal
+Coordinates Analysis (<span class="SpellE">PCoA</span>)<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-left:30.0pt;mso-add-space:auto;
+text-indent:-.25in;line-height:200%;mso-list:l1 level1 lfo2"><!--[if !supportLists]--><span style="font-size:11.0pt;line-height:200%;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Helvetica;mso-bidi-font-family:Helvetica"><span style="mso-list:Ignore">4.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;
+</span></span></span><!--[endif]--><span style="font-size:11.0pt;line-height:200%;
+font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-bidi-font-family:Helvetica">Non-Metric
+Multidimensional Scaling (NMDS).<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><u><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica">Principal Components Analysis (PCA)<o:p></o:p></span></u></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica">This function is part of the basic R
+installation, so you won�t need the vegan package yet.<span style="mso-spacerun:yes">� </span>Before you run the function, you will need to
+have a data frame containing only numerical data (there can be row names).<span style="mso-spacerun:yes">� </span>The default arrangement is to have the
+samples (or sites) in rows and the measured variables (or counts) in
+columns.<span style="mso-spacerun:yes">� </span>You can transpose a data frame
+(or matrix) � swap the rows to columns and vice versa � using the transpose
+function <span class="GramE">t(</span>�):<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span class="SpellE"><span style="font-family:&quot;Courier New&quot;;
+color:red">transposed.frame</span></span><span style="font-family:&quot;Courier New&quot;;
+color:red">&lt;-<span class="GramE">t(</span><span class="SpellE">dataframe</span>)
+</span><span style="font-family:&quot;Courier New&quot;;color:#00B050">#transposes data
+frame so rows become columns and vice versa<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica">The default setting for the PCA <span class="SpellE"><span class="GramE">prcomp</span></span><span class="GramE">(</span>�)
+function performs ordination using the covariance matrix, for example:<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;;color:red">PCA.res&lt;-<span class="SpellE"><span class="GramE">prcomp</span></span><span class="GramE">(</span><span class="SpellE">data.frame</span>) </span><span style="font-family:&quot;Courier New&quot;;
+color:#00B050">#where <span class="SpellE">data.frame</span> is the name of the
+data frame variable<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica">If you want to use the correlation matrix (for
+example, when the variables are measured in different units or when differences
+in their variances are not important for interpretation), specify:<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;;color:red">PCA.res&lt;-<span class="SpellE"><span class="GramE">prcomp</span></span><span class="GramE">(</span><span class="SpellE">data.frame</span>, scale.=T)</span><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica">You should store the results as a variable, an
+object of class �<span class="SpellE">prcomp</span>� (don�t worry about what �class�
+means) that contains specific items.<span style="mso-spacerun:yes">�
+</span>Most of the time you will want to plot the results manually using the
+values provided, to customize the sample colors and other parameters, but to
+get a quick plot you can use the <span class="SpellE"><span class="GramE">biplot</span></span><span class="GramE">(</span>�) command:<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span class="SpellE"><span class="GramE"><span style="font-family:
+&quot;Courier New&quot;;color:red">biplot</span></span></span><span class="GramE"><span style="font-family:&quot;Courier New&quot;;color:red">(</span></span><span style="font-family:&quot;Courier New&quot;;color:red">PCA.res)<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica;mso-no-proof:yes"><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="Picture_x0020_1" o:spid="_x0000_i1033" type="#_x0000_t75"
+ style='width:408pt;height:348pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="ordination_files/image001.wmz" o:title=""/>
+</v:shape><![endif]--><!--[if !vml]--><img border="0" width="544" height="464" src="./ordination_files/image002.png" v:shapes="Picture_x0020_1"><!--[endif]--></span><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-bidi-font-family:Helvetica"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica">The first two (most important) components are
+plotted, samples are shown in black and the loadings of each variable are shown
+by the red arrows.<span style="mso-spacerun:yes">� </span>There are two sets of
+axis scales; the ones on the right and top correspond to the axis scores for
+samples, and the bottom and left axes correspond to the loadings of the
+variables.<span style="mso-spacerun:yes">� </span>Note that it uses the sample
+labels for plot points, which is usually unwieldy.<span style="mso-spacerun:yes">� </span>If you have a lot of variables, you will also
+get a giant mess of loadings like in the plot above.<span style="mso-spacerun:yes">� </span>Because of that, it is often better to
+produce a custom plot.<span style="mso-spacerun:yes">� </span>That will allow
+you to customize other characteristics � grouping samples into categories by
+color of the points, for example.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica">The PCA results object contains the following
+variables:<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span class="GramE"><span style="font-family:&quot;Courier New&quot;;
+color:red">names(</span></span><span style="font-family:&quot;Courier New&quot;;
+color:red">PCA.res)<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;;color:#0000CC">[1]
+"<span class="SpellE"><span class="GramE">sdev</span></span>"<span style="mso-spacerun:yes">���� </span>"rotation"
+"center"<span style="mso-spacerun:yes">��
+</span>"scale"<span style="mso-spacerun:yes">���
+</span>"x"<span style="mso-spacerun:yes">�� </span><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica">�Center� and �scale� simply keep track of your
+choices when running the function, so �<span class="SpellE">sdev</span>,�
+�rotation,� and �x� <span class="GramE">are</span> the important data.<span style="mso-spacerun:yes">� </span>The �<span class="SpellE">sdev</span>� variable
+contains the standard deviation for each principal component axis.<span style="mso-spacerun:yes">� </span>Because it is more traditional to talk about
+variance explained (rather than standard deviation), you can easily convert <span class="SpellE">sdev</span> to variance (variance is standard deviation squared)
+or proportion of variance.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica">You can also assess the proportion of variance
+explained by asking for the summary of the PCA results:<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span class="GramE"><span style="font-family:&quot;Courier New&quot;;
+color:red">summary(</span></span><span style="font-family:&quot;Courier New&quot;;
+color:red">PCA.res)<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;;color:#0000CC">Importance
+of components:<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;;color:#0000CC"><span style="mso-spacerun:yes">������������������������ </span>PC1<span style="mso-spacerun:yes">�� </span>PC2<span style="mso-spacerun:yes">��
+</span>PC3<span style="mso-spacerun:yes">��� </span>PC4<span style="mso-spacerun:yes">��� </span>PC5<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;;color:#0000CC">Standard
+deviation<span style="mso-spacerun:yes">���� </span>0.175 0.142 0.115 0.0924
+0.0845<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;;color:#0000CC">Proportion
+of Variance 0.312 0.205 0.135 0.0871 0.0728<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;;color:#0000CC">Cumulative
+<span class="GramE">Proportion<span style="mso-spacerun:yes">� </span>0.312</span>
+0.517 0.652 0.7395 0.8123<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica">The output is truncated to only include the
+first five components.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica">You can also use �<span class="SpellE">sdev</span>�
+to produce a scree plot to help decide how many components to interpret:<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica;mso-no-proof:yes"><!--[if gte vml 1]><v:shape
+ id="Picture_x0020_2" o:spid="_x0000_i1032" type="#_x0000_t75" style='width:402pt;
+ height:385.5pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="ordination_files/image003.wmz" o:title=""/>
+</v:shape><![endif]--><!--[if !vml]--><img border="0" width="536" height="514" src="./ordination_files/image004.png" v:shapes="Picture_x0020_2"><!--[endif]--></span><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-bidi-font-family:Helvetica"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica">The variable somewhat cryptically named �x� actually
+contains the axis scores for each sample on each principal component.<span style="mso-spacerun:yes">� </span>The variable named �rotation� contains the
+values for the loadings, which can be used to add arrows for loadings on the <span class="SpellE">biplot</span>.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica">Even though PCA is not an appropriate ordination
+method for this ecological data set, here is an example of the type of <span class="SpellE">biplot</span> you can make by custom plotting.<span style="mso-spacerun:yes">� </span>For more information on adding arrows, text
+labels, and legends to plots, and information on how to vary colors, see the <a href="http://www.pmc.ucsc.edu/~mclapham/Rtips/graphing.htm">graphing</a>
+page.<span style="mso-spacerun:yes">� </span>I also only plotted the ten
+largest loadings (the ten most important variables for these two components)
+for clarity.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica;mso-no-proof:yes"><!--[if gte vml 1]><v:shape
+ id="Picture_x0020_3" o:spid="_x0000_i1031" type="#_x0000_t75" style='width:403.5pt;
+ height:387pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="ordination_files/image005.wmz" o:title=""/>
+</v:shape><![endif]--><!--[if !vml]--><img border="0" width="538" height="516" src="./ordination_files/image006.png" v:shapes="Picture_x0020_3"><!--[endif]--></span><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-bidi-font-family:Helvetica"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><u><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica">Correspondence and <span class="SpellE">Detrended</span>
+Correspondence Analysis (DCA)</span></u><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica">This function is in the vegan package and is
+called �<span class="SpellE">decorana</span>� and it requires a matrix-like
+object (data frame) with samples in rows and species in columns (DCA is typically
+performed on taxonomic count data, but could be applied to other types of
+data).<span style="mso-spacerun:yes">� </span>The basic function call is
+simple, but you should keep in mind the default settings:<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;;color:red">DCA.res&lt;-<span class="SpellE"><span class="GramE">decorana</span></span><span class="GramE">(</span><span class="SpellE">dataframe</span>) </span><span style="font-family:&quot;Courier New&quot;;
+color:#00B050">#performs DCA</span><span style="font-family:&quot;Courier New&quot;;
+color:red"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica">The default settings are to 1) perform the <span class="SpellE">detrending</span>/rescaling procedure (<span class="SpellE">ira</span>=0),
+2) not <span class="SpellE">downweight</span> rare taxa (<span class="SpellE">iweigh</span>=0),
+3) perform four rescaling cycles (<span class="SpellE">iresc</span>=4), and 4)
+use 26 segments for <span class="SpellE">detrending</span>/rescaling (<span class="SpellE"><span class="GramE">mk</span></span><span class="GramE">=</span>26).<span style="mso-spacerun:yes">� </span>You generally won�t want to change the
+rescaling cycles or segment number, but the first two parameters can be
+adjusted.<span style="mso-spacerun:yes">� </span>The function only returns the
+first four axes.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;;color:red">DCA.res&lt;-<span class="SpellE"><span class="GramE">decorana</span></span><span class="GramE">(</span><span class="SpellE">dataframe,ira</span>=1) </span><span style="font-family:&quot;Courier New&quot;;
+color:#00B050">#performs CA (actually reciprocal averaging)</span><span style="font-family:&quot;Courier New&quot;;color:red"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;;color:red">DCA.res&lt;-<span class="SpellE"><span class="GramE">decorana</span></span><span class="GramE">(</span><span class="SpellE">dataframe,iweigh</span>=1) </span><span style="font-family:&quot;Courier New&quot;;
+color:#00B050">#performs DCA and <span class="SpellE">downweights</span> rare
+taxa</span><span style="font-family:&quot;Courier New&quot;;color:red"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica">The result variable is an object containing
+eigenvalues, sample and species scores, etc.<span style="mso-spacerun:yes">�
+</span>There are some things to beware, however!<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica">The eigenvalues are reported in the summary (</span><span class="GramE"><span style="font-family:&quot;Courier New&quot;;color:red">summary(</span></span><span style="font-family:&quot;Courier New&quot;;color:red">DCA.res)</span><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-bidi-font-family:Helvetica">)
+and can be obtained from </span><span class="SpellE"><span style="font-family:
+&quot;Courier New&quot;;color:red">DCA.res$evals</span></span><span style="font-family:
+&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-bidi-font-family:Helvetica">.<span style="mso-spacerun:yes">� </span>In CA, these eigenvalues represent the
+inertia of each axis and are conceptually analogous to the �variance explained�
+in PCA.<span style="mso-spacerun:yes">� </span>Total inertia is not given, but
+it is simply based on the chi-squared statistic for the whole data frame:<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span class="SpellE"><span style="font-family:&quot;Courier New&quot;;
+color:red">total.inertia</span></span><span style="font-family:&quot;Courier New&quot;;
+color:red">&lt;-<span class="SpellE"><span class="GramE">chisq.test</span></span><span class="GramE">(</span><span class="SpellE">dataframe</span>/sum(<span class="SpellE">dataframe</span>))$statistic<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica">You can easily calculate the proportion of
+inertia for each axis.<span style="mso-spacerun:yes">� </span>In DCA, however,
+the returned eigenvalues do not sum to total inertia and don�t actually have a
+lot of meaning because of the <span class="SpellE">detrending</span>/rescaling
+process.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica">Likewise, the variables </span><span class="SpellE"><span style="font-family:&quot;Courier New&quot;;color:red">DCA.res$rproj</span></span><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-bidi-font-family:Helvetica">
+and </span><span class="SpellE"><span style="font-family:&quot;Courier New&quot;;
+color:red">DCA.res$cproj</span></span><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"> seem to contain sample and species axis scores
+(which you could use for plotting), but this is only true for CA (<span class="SpellE">ira</span>=1).<span style="mso-spacerun:yes">� </span>In DCA, the <span class="SpellE">detrending</span>/rescaling procedure distorts the scores, so you
+need to use a different method.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span class="GramE"><span style="font-family:&quot;Courier New&quot;;
+color:red">scores(</span></span><span class="SpellE"><span style="font-family:
+&quot;Courier New&quot;;color:red">DCA.res,display</span></span><span style="font-family:
+&quot;Courier New&quot;;color:red">="sites") </span><span style="font-family:
+&quot;Courier New&quot;;color:#00B050">#extracts sample/site axis scores<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span class="GramE"><span style="font-family:&quot;Courier New&quot;;
+color:red">scores(</span></span><span class="SpellE"><span style="font-family:
+&quot;Courier New&quot;;color:red">DCA.res,display</span></span><span style="font-family:
+&quot;Courier New&quot;;color:red">="species") </span><span style="font-family:
+&quot;Courier New&quot;;color:#00B050">#extracts variable/species axis scores<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span class="GramE"><span style="font-family:&quot;Courier New&quot;;
+color:red">scores(</span></span><span class="SpellE"><span style="font-family:
+&quot;Courier New&quot;;color:red">DCA.res,display</span></span><span style="font-family:
+&quot;Courier New&quot;;color:red">="<span class="SpellE">sites",choice</span>=1:2)
+</span><span style="font-family:&quot;Courier New&quot;;color:#00B050">#extracts
+sample/site scores for axes 1 and 2 only<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span class="GramE"><span style="font-family:&quot;Courier New&quot;;
+color:red">scores(</span></span><span class="SpellE"><span style="font-family:
+&quot;Courier New&quot;;color:red">DCA.res,display</span></span><span style="font-family:
+&quot;Courier New&quot;;color:red">="<span class="SpellE">species",choice</span>=2:3)
+</span><span style="font-family:&quot;Courier New&quot;;color:#00B050">#extracts
+sample/site scores for axes 2 and 3 only<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica">To plot the results, you can just use the
+default <span class="GramE">plot(</span>�) command on the results (I added the titles),
+which plots the sites as open circles and the variables/species as red crosses,
+but without labels, as shown below.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica;mso-no-proof:yes"><!--[if gte vml 1]><v:shape
+ id="Picture_x0020_4" o:spid="_x0000_i1030" type="#_x0000_t75" style='width:329.25pt;
+ height:328.5pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="ordination_files/image007.wmz" o:title=""/>
+</v:shape><![endif]--><!--[if !vml]--><img border="0" width="439" height="438" src="./ordination_files/image008.png" v:shapes="Picture_x0020_4"><!--[endif]--></span><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-bidi-font-family:Helvetica"><span style="mso-spacerun:yes">� </span><span style="mso-no-proof:yes"><!--[if gte vml 1]><v:shape
+ id="Picture_x0020_5" o:spid="_x0000_i1029" type="#_x0000_t75" style='width:329.25pt;
+ height:328.5pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="ordination_files/image009.wmz" o:title=""/>
+</v:shape><![endif]--><!--[if !vml]--><img border="0" width="439" height="438" src="./ordination_files/image010.png" v:shapes="Picture_x0020_5"><!--[endif]--></span><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica">For more customization, you can extract the
+scores (as explained above) and plot manually as done in the PCA section.<span style="mso-spacerun:yes">� </span>You can also use the </span><span style="font-family:&quot;Courier New&quot;;color:red">display=<span class="GramE">c(</span>"<span class="SpellE">sites","species</span>")</span><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-bidi-font-family:Helvetica">
+option combined with </span><span style="font-family:&quot;Courier New&quot;;color:red">points(�)</span><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-bidi-font-family:Helvetica;
+color:red"> </span><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica">or </span><span style="font-family:&quot;Courier New&quot;;
+color:red">text(�) </span><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica">to add points or labels.<span style="mso-spacerun:yes">� </span>For example:<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span class="GramE"><span style="font-family:&quot;Courier New&quot;;
+color:red">plot(</span></span><span class="SpellE"><span style="font-family:&quot;Courier New&quot;;
+color:red">CA.res,type</span></span><span style="font-family:&quot;Courier New&quot;;
+color:red">="<span class="SpellE">n",main</span>="Correspondence
+Analysis") </span><span style="font-family:&quot;Courier New&quot;;color:#00B050">#creates
+empty plot(type=�n�)<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span class="GramE"><span style="font-family:&quot;Courier New&quot;;
+color:red">text(</span></span><span class="SpellE"><span style="font-family:&quot;Courier New&quot;;
+color:red">CA.res,display</span></span><span style="font-family:&quot;Courier New&quot;;
+color:red">="<span class="SpellE">species",col</span>="red",<span class="SpellE">cex</span>=0.6) </span><span style="font-family:&quot;Courier New&quot;;
+color:#00B050">#adds red labels for species<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;;color:#00B050"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span class="GramE"><span style="font-family:&quot;Courier New&quot;;
+color:red">points(</span></span><span class="SpellE"><span style="font-family:
+&quot;Courier New&quot;;color:red">CA.res,display</span></span><span style="font-family:
+&quot;Courier New&quot;;color:red">="sites",<span class="SpellE">pch</span>=16) </span><span style="font-family:&quot;Courier New&quot;;color:#00B050">#adds filled circles for sites<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;;color:#00B050"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;;color:#00B050;
+mso-no-proof:yes"><!--[if gte vml 1]><v:shape id="Picture_x0020_6" o:spid="_x0000_i1028"
+ type="#_x0000_t75" style='width:329.25pt;height:328.5pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="ordination_files/image011.wmz" o:title=""/>
+</v:shape><![endif]--><!--[if !vml]--><img border="0" width="439" height="438" src="./ordination_files/image012.png" v:shapes="Picture_x0020_6"><!--[endif]--></span><span style="font-family:&quot;Courier New&quot;;color:#00B050"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica">Note that the <span class="SpellE">taxon</span>
+names plot on top of one another, resulting in a jumbled mess.<span style="mso-spacerun:yes">� </span>Producing a publication-quality plot here
+would take some more detailed work.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><u><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica">Principal Coordinates Analysis (<span class="SpellE">PCoA</span>)<o:p></o:p></span></u></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span class="SpellE"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica">PCoA</span></span><span style="font-family:
+&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-bidi-font-family:Helvetica"> is a distance-based
+ordination method that can be performed via the <span class="SpellE"><span class="GramE">capscale</span></span><span class="GramE">(</span>�) function in
+vegan.<span style="mso-spacerun:yes">� </span>You can also use <span class="SpellE"><span class="GramE">cmdscale</span></span><span class="GramE">(</span>�)
+in the base installation, but you will need to produce a distance matrix from
+the original data (see the <a href="http://www.pmc.ucsc.edu/~mclapham/Rtips/cluster.htm">cluster analysis</a>
+page for more information on distances).<span style="mso-spacerun:yes">�
+</span><span class="SpellE">PCoA</span> is also called classical multidimensional
+scaling or metric multidimensional scaling.<span style="mso-spacerun:yes">�
+</span>The major benefit of <span class="SpellE">PCoA</span> is the ability to
+choose a different distance measure � when Euclidean distance is <span class="GramE">used,</span> <span class="SpellE">PCoA</span> is the same as PCA.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica">The <span class="SpellE"><span class="GramE">capscale</span></span><span class="GramE">(</span>�) function is designed for another purpose, so the syntax
+is a bit different than the other ordination methods, but it can be used to
+perform <span class="SpellE">PCoA</span>:<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;;color:red">PCoA.res&lt;-<span class="SpellE"><span class="GramE">capscale</span></span><span class="GramE">(</span>dataframe~1,distance="bray")
+</span><span style="font-family:&quot;Courier New&quot;;color:#00B050">#must specify
+dataframe~1 (where <span class="SpellE">dataframe</span> is the sample/variable
+data matrix) to perform <span class="SpellE">PCoA</span><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;;color:#00B050">#must
+specify a distance from distances provided in <span class="SpellE"><span class="GramE">vegdist</span></span><span class="GramE">(</span>�)<o:p></o:p></span></p>
+
+<p class="MsoNormal"><code><span style="mso-ansi-font-size:11.0pt;mso-bidi-font-size:
+11.0pt;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:Calibri;
+mso-fareast-theme-font:minor-latin"><o:p>&nbsp;</o:p></span></code></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica">The <span class="SpellE"><span class="GramE">vegdist</span></span><span class="GramE">(</span>�) function has more distances, including some more
+applicable to (<span class="SpellE">paleo</span>)ecological data:</span><span style="mso-bidi-font-family:Helvetica"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica">Distances available in <span class="SpellE">vegdist</span>(�)
+are: </span><code><span style="mso-ansi-font-size:11.0pt;mso-bidi-font-size:
+11.0pt;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:Calibri;
+mso-fareast-theme-font:minor-latin">"<span class="SpellE">manhattan</span>"</span></code><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;">, </span><code><span style="mso-ansi-font-size:11.0pt;mso-bidi-font-size:11.0pt;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin">"<span class="SpellE">euclidean</span>"</span></code><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;">,
+</span><code><span style="mso-ansi-font-size:11.0pt;mso-bidi-font-size:11.0pt;
+font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:Calibri;
+mso-fareast-theme-font:minor-latin">"<span class="SpellE">canberra</span>"</span></code><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;">, </span><code><span style="mso-ansi-font-size:11.0pt;mso-bidi-font-size:11.0pt;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin">"bray"</span></code><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;">, </span><code><span style="mso-ansi-font-size:11.0pt;mso-bidi-font-size:11.0pt;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin">"<span class="SpellE">kulczynski</span>"</span></code><span style="font-family:
+&quot;Helvetica&quot;,&quot;sans-serif&quot;">, </span><code><span style="mso-ansi-font-size:11.0pt;
+mso-bidi-font-size:11.0pt;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Calibri;mso-fareast-theme-font:minor-latin">"<span class="SpellE">jaccard</span>"</span></code><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;">, </span><code><span style="mso-ansi-font-size:11.0pt;mso-bidi-font-size:11.0pt;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin">"<span class="SpellE">gower</span>"</span></code><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;">,
+</span><code><span style="mso-ansi-font-size:11.0pt;mso-bidi-font-size:11.0pt;
+font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:Calibri;
+mso-fareast-theme-font:minor-latin">"<span class="SpellE">altGower</span>"</span></code><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;">, </span><code><span style="mso-ansi-font-size:11.0pt;mso-bidi-font-size:11.0pt;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin">"<span class="SpellE">morisita</span>"</span></code><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;">,
+</span><code><span style="mso-ansi-font-size:11.0pt;mso-bidi-font-size:11.0pt;
+font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:Calibri;
+mso-fareast-theme-font:minor-latin">"horn"</span></code><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;">, </span><code><span style="mso-ansi-font-size:11.0pt;mso-bidi-font-size:11.0pt;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin">"<span class="SpellE">mountford</span>"</span></code><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;">,
+</span><code><span style="mso-ansi-font-size:11.0pt;mso-bidi-font-size:11.0pt;
+font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:Calibri;
+mso-fareast-theme-font:minor-latin">"<span class="SpellE">raup</span>"</span></code><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;"> , </span><code><span style="mso-ansi-font-size:11.0pt;mso-bidi-font-size:11.0pt;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin">"binomial"</span></code><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;"> or </span><code><span style="mso-ansi-font-size:11.0pt;mso-bidi-font-size:11.0pt;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin">"<span class="SpellE">chao</span>" and the default is �bray� or Bray-Curtis.<o:p></o:p></span></code></p>
+
+<p class="MsoNormal"><code><span style="mso-ansi-font-size:11.0pt;mso-bidi-font-size:
+11.0pt;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:Calibri;
+mso-fareast-theme-font:minor-latin"><o:p>&nbsp;</o:p></span></code></p>
+
+<p class="MsoNormal"><code><span style="mso-ansi-font-size:11.0pt;mso-bidi-font-size:
+11.0pt;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:Calibri;
+mso-fareast-theme-font:minor-latin">You can see the eigenvalues (including
+proportion contribution to distance explained) and the species and sample
+scores using:<o:p></o:p></span></code></p>
+
+<p class="MsoNormal"><code><span style="mso-ansi-font-size:11.0pt;mso-bidi-font-size:
+11.0pt;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:Calibri;
+mso-fareast-theme-font:minor-latin"><o:p>&nbsp;</o:p></span></code></p>
+
+<p class="MsoNormal"><span class="GramE"><code><span style="mso-ansi-font-size:
+11.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:Calibri;mso-fareast-theme-font:
+minor-latin;color:red">summary(</span></code></span><code><span style="mso-ansi-font-size:11.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:
+Calibri;mso-fareast-theme-font:minor-latin;color:red">PCoA.res)</span></code><code><span style="mso-ansi-font-size:11.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:
+Calibri;mso-fareast-theme-font:minor-latin"><o:p></o:p></span></code></p>
+
+<p class="MsoNormal"><code><span style="mso-ansi-font-size:11.0pt;mso-bidi-font-size:
+11.0pt;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:Calibri;
+mso-fareast-theme-font:minor-latin"><o:p>&nbsp;</o:p></span></code></p>
+
+<p class="MsoNormal"><code><span style="mso-ansi-font-size:11.0pt;mso-bidi-font-size:
+11.0pt;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:Calibri;
+mso-fareast-theme-font:minor-latin">Scores can be extracted in the same fashion
+as DCA:<o:p></o:p></span></code></p>
+
+<p class="MsoNormal"><code><span style="mso-ansi-font-size:11.0pt;mso-bidi-font-size:
+11.0pt;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:Calibri;
+mso-fareast-theme-font:minor-latin"><o:p>&nbsp;</o:p></span></code></p>
+
+<p class="MsoNormal"><span class="GramE"><code><span style="mso-ansi-font-size:
+11.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:Calibri;mso-fareast-theme-font:
+minor-latin;color:red">scores(</span></code></span><span class="SpellE"><code><span style="mso-ansi-font-size:11.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:
+Calibri;mso-fareast-theme-font:minor-latin;color:red">PCoA.res,display</span></code></span><code><span style="mso-ansi-font-size:11.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:
+Calibri;mso-fareast-theme-font:minor-latin;color:red">=�sites�) </span></code><code><span style="mso-ansi-font-size:11.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:
+Calibri;mso-fareast-theme-font:minor-latin;color:#00B050">#or display=�species�<o:p></o:p></span></code></p>
+
+<p class="MsoNormal"><code><span style="mso-ansi-font-size:11.0pt;mso-bidi-font-size:
+11.0pt;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:Calibri;
+mso-fareast-theme-font:minor-latin"><o:p>&nbsp;</o:p></span></code></p>
+
+<p class="MsoNormal"><code><span style="mso-ansi-font-size:11.0pt;mso-bidi-font-size:
+11.0pt;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:Calibri;
+mso-fareast-theme-font:minor-latin">The default </span></code><span class="GramE"><code><span style="mso-ansi-font-size:11.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;
+color:red">plot(</span></code></span><code><span style="mso-ansi-font-size:
+11.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:Calibri;mso-fareast-theme-font:
+minor-latin;color:red">PCoA.res)</span></code><code><span style="mso-ansi-font-size:
+11.0pt;mso-bidi-font-size:11.0pt;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;color:red"> </span></code><code><span style="mso-ansi-font-size:11.0pt;mso-bidi-font-size:11.0pt;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin">doesn�t
+include labels so you can either add points(�) and text(�) as outlined above,
+or extract the scores and plot manually:<o:p></o:p></span></code></p>
+
+<p class="MsoNormal"><code><span style="mso-ansi-font-size:11.0pt;mso-bidi-font-size:
+11.0pt;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:Calibri;
+mso-fareast-theme-font:minor-latin"><o:p>&nbsp;</o:p></span></code></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica;mso-no-proof:yes"><!--[if gte vml 1]><v:shape
+ id="Picture_x0020_8" o:spid="_x0000_i1027" type="#_x0000_t75" style='width:360.75pt;
+ height:5in;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="ordination_files/image013.wmz" o:title=""/>
+</v:shape><![endif]--><!--[if !vml]--><img border="0" width="481" height="480" src="./ordination_files/image014.png" v:shapes="Picture_x0020_8"><!--[endif]--></span><span style="mso-bidi-font-family:Helvetica"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica">Notice that the <span class="SpellE">PCoA</span>
+plot looks similar to the PCA plot (although rotated), because both enforce a
+linear relationship that is not appropriate for ecological data like this.<span style="mso-spacerun:yes">� </span>I�m not sure why the species scores are so tightly
+clustered around the origin.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><u><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica">Non-Metric Multidimensional Scaling (NMDS)</span></u><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-bidi-font-family:Helvetica"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica">The default syntax to perform NMDS in the vegan
+package is simple � the function is <span class="SpellE"><span class="GramE">metaMDS</span></span><span class="GramE">(</span>�), but there are some defaults that may or may not be what
+you want.<span style="mso-spacerun:yes">� </span>Make sure to store the results
+as a variable.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoListParagraph" style="text-indent:-.25in;mso-list:l0 level1 lfo4"><!--[if !supportLists]--><span style="font-size:11.0pt;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Helvetica;mso-bidi-font-family:Helvetica"><span style="mso-list:Ignore">1.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span style="font-size:11.0pt;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-bidi-font-family:
+Helvetica">The default distance is Bray-Curtis, but any distance available in <span class="SpellE"><span class="GramE">vegdist</span></span><span class="GramE">(</span>�)
+can be used.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.5in"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica">For example, </span><span class="SpellE"><span class="GramE"><span style="font-family:&quot;Courier New&quot;;color:red">metaMDS</span></span></span><span class="GramE"><span style="font-family:&quot;Courier New&quot;;color:red">(</span></span><span class="SpellE"><span style="font-family:&quot;Courier New&quot;;color:red">dataframe,distance</span></span><span style="font-family:&quot;Courier New&quot;;color:red">=�<span class="SpellE"><code><span style="mso-ansi-font-size:11.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:
+Calibri;mso-fareast-theme-font:minor-latin">kulczynski</span></code></span><code><span style="mso-ansi-font-size:11.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:
+Calibri;mso-fareast-theme-font:minor-latin">�)<o:p></o:p></span></code></span></p>
+
+<p class="MsoNormal" style="margin-left:.5in"><code><span style="mso-ansi-font-size:
+11.0pt;mso-bidi-font-size:11.0pt;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin"><o:p>&nbsp;</o:p></span></code></p>
+
+<p class="MsoListParagraphCxSpFirst" style="text-indent:-.25in;mso-list:l0 level1 lfo4"><!--[if !supportLists]--><code><span style="font-size:11.0pt;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Helvetica;mso-bidi-font-family:Helvetica"><span style="mso-list:Ignore">2.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></span></span></code><!--[endif]--><code><span style="font-size:11.0pt;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Calibri;mso-fareast-theme-font:minor-latin">If some counts are large, the
+default is to perform a square-<span class="SpellE">root</span> transformation.<span style="mso-spacerun:yes">� </span>A Wisconsin-style double transformation
+(normalizing taxa to percent abundance and then normalizing abundances to the
+maximum for each species) is also the default.<span style="mso-spacerun:yes">�
+</span>To turn off these defaults, use:<o:p></o:p></span></code></p>
+
+<p class="MsoListParagraphCxSpMiddle"><code><span style="font-size:11.0pt;
+font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:Calibri;
+mso-fareast-theme-font:minor-latin"><o:p>&nbsp;</o:p></span></code></p>
+
+<p class="MsoListParagraphCxSpLast"><span class="SpellE"><span class="GramE"><span style="font-size:11.0pt;font-family:&quot;Courier New&quot;;color:red">metaMDS</span></span></span><span class="GramE"><span style="font-size:11.0pt;font-family:&quot;Courier New&quot;;color:red">(</span></span><span class="SpellE"><span style="font-size:11.0pt;font-family:&quot;Courier New&quot;;
+color:red">dataframe,autotransform</span></span><span style="font-size:11.0pt;
+font-family:&quot;Courier New&quot;;color:red">=F<code><span style="mso-ansi-font-size:
+11.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:Calibri;mso-fareast-theme-font:
+minor-latin">)</span></code></span><code><span style="font-size:11.0pt;
+font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:Calibri;
+mso-fareast-theme-font:minor-latin"><o:p></o:p></span></code></p>
+
+<p class="MsoNormal" style="margin-left:.5in"><span style="mso-bidi-font-family:
+Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoListParagraphCxSpFirst" style="text-indent:-.25in;mso-list:l0 level1 lfo4"><!--[if !supportLists]--><span style="font-size:11.0pt;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Helvetica;mso-bidi-font-family:Helvetica"><span style="mso-list:Ignore">3.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span style="font-size:11.0pt;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-bidi-font-family:
+Helvetica">Axes are meaningless in NMDS (because it is not an <span class="SpellE">eigenanalysis</span> ordination), so the final result is rotated
+using PCA to make axis 1 (on the plot) correspond to the greatest variance
+among the NMDS sample points.<span style="mso-spacerun:yes">� </span>This
+doesn�t change interpretation, cannot be modified, and is a good idea, but you
+should be aware of it.<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle"><span style="font-size:11.0pt;font-family:
+&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="text-indent:-.25in;mso-list:l0 level1 lfo4"><!--[if !supportLists]--><span style="font-size:11.0pt;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Helvetica;mso-bidi-font-family:Helvetica"><span style="mso-list:Ignore">4.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span style="font-size:11.0pt;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-bidi-font-family:
+Helvetica">Choice of dimensionality is important in NMDS (and must be
+user-specified) because NMDS at lower dimensions is not a projection of the
+higher-dimension solution.<span style="mso-spacerun:yes">� </span>The default
+is to ordinate the points in two dimensions (k=2), but you may want to look at
+three dimensions or more.<o:p></o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle"><span style="font-size:11.0pt;font-family:
+&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoListParagraphCxSpMiddle"><span class="SpellE"><span class="GramE"><span style="font-size:11.0pt;font-family:&quot;Courier New&quot;;color:red">metaMDS</span></span></span><span class="GramE"><span style="font-size:11.0pt;font-family:&quot;Courier New&quot;;color:red">(</span></span><span class="SpellE"><span style="font-size:11.0pt;font-family:&quot;Courier New&quot;;
+color:red">dataframe,autotransform</span></span><span style="font-size:11.0pt;
+font-family:&quot;Courier New&quot;;color:red">=<span class="SpellE">F,k</span>=3<code><span style="mso-ansi-font-size:11.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:
+Calibri;mso-fareast-theme-font:minor-latin">)</span></code></span><code><span style="font-size:11.0pt;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+Calibri;mso-fareast-theme-font:minor-latin"><o:p></o:p></span></code></p>
+
+<p class="MsoListParagraphCxSpMiddle"><span style="mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoListParagraphCxSpLast"><span style="font-size:11.0pt;font-family:
+&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-bidi-font-family:Helvetica">A plot of stress (a
+measure of goodness-of-fit) vs. dimensionality can be used to assess the proper
+choice of dimensions, in much the same way as you could use a scree plot in
+PCA.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica">Here is a function that produces a stress vs.
+dimensionality plot:<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span class="SpellE"><span style="font-family:&quot;Courier New&quot;;
+color:red">NMDS.scree</span></span><span style="font-family:&quot;Courier New&quot;;
+color:red">&lt;-function(x) <span class="GramE">{ <span style="color:#00B050">#</span></span></span><span style="font-family:&quot;Courier New&quot;;color:#00B050">where x is the name of the data
+frame variable</span><span style="font-family:&quot;Courier New&quot;;color:red"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;;color:red">plot(rep(1,10),replicate(10,metaMDS(x,autotransform=F,k=1)$stress/100),xlim=c(1,nrow(x)),ylim=c(0,0.5),xlab="#
+of Dimensions",<span class="SpellE">ylab</span>="<span class="SpellE">Stress",main</span>=�NMDS
+stress plot�)<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;;color:red"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span class="GramE"><span style="font-family:&quot;Courier New&quot;;
+color:red">for</span></span><span style="font-family:&quot;Courier New&quot;;color:red">
+(<span class="SpellE">i</span> in 1:(<span class="SpellE">nrow</span>(x)-2)) {<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;;color:red">points(rep(i+1,10),replicate(10,metaMDS(x,autotransform=F,k=i+1)$stress/100))<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;;color:red">}<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;;color:red">}<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica">Ideally, there will be an inflection point (an
+�elbow�) that you can use to choose the number of dimensions (usually k+1 if
+the inflection is at point k).<span style="mso-spacerun:yes">� </span>In
+practice, as in this case, it is often less clear � should you choose three
+dimensions or five?<span style="mso-spacerun:yes">� </span>The stress values
+themselves (the <span class="SpellE">metaMDS</span> results are stress*100) can
+be used as an indicator.<span style="mso-spacerun:yes">� </span>Stress values
+&gt;0.2 are generally poor and potentially <span class="SpellE">uninterpretable</span>,
+whereas values &lt;0.1 are good and &lt;0.05 are excellent, leaving little
+danger of misinterpretation.<span style="mso-spacerun:yes">� </span>Stress
+values between 0.1 and 0.2 are useable but some of the distances will be
+misleading.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica;mso-no-proof:yes"><!--[if gte vml 1]><v:shape
+ id="Picture_x0020_9" o:spid="_x0000_i1026" type="#_x0000_t75" style='width:360.75pt;
+ height:5in;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="ordination_files/image015.wmz" o:title=""/>
+</v:shape><![endif]--><!--[if !vml]--><img border="0" width="481" height="480" src="./ordination_files/image016.png" v:shapes="Picture_x0020_9"><!--[endif]--></span><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-bidi-font-family:Helvetica"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica">The <span class="SpellE">metaMDS</span>
+ordination results contain sample/site axis scores (</span><span class="SpellE"><span style="font-family:&quot;Courier New&quot;;color:red">NMDS.res$points</span></span><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-bidi-font-family:Helvetica">)
+and variable/taxon scores (</span><span class="SpellE"><span style="font-family:
+&quot;Courier New&quot;;color:red">NMDS.res$species</span></span><span style="font-family:
+&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-bidi-font-family:Helvetica">) that you can use to
+make a custom plot (as with previous ordinations, the default plot has species
+marked by red crosses and samples by open circles, but both are unlabeled).<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+mso-bidi-font-family:Helvetica;mso-no-proof:yes"><!--[if gte vml 1]><v:shape
+ id="Picture_x0020_10" o:spid="_x0000_i1025" type="#_x0000_t75" style='width:360.75pt;
+ height:5in;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="ordination_files/image017.wmz" o:title=""/>
+</v:shape><![endif]--><!--[if !vml]--><img border="0" width="481" height="480" src="./ordination_files/image018.png" v:shapes="Picture_x0020_10"><!--[endif]--></span><span style="font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;mso-bidi-font-family:Helvetica"><o:p></o:p></span></p>
+
+</div>
+
+
+
+
+</body></html>

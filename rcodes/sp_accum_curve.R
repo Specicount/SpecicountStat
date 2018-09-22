@@ -13,8 +13,8 @@ core <- raw_data[, c(8:ncol(raw_data))]
 
 # Draw Species Accumulation Curve
 sp1 <- specaccum(core)
-sp2 <- specaccum(core, "random")
+sp2 <- specaccum(core, "random", permutations = 100)
 sp2
 summary(sp2)
 plot(sp1, ci.type="poly", col="blue", lwd=2, ci.lty=0, ci.col="lightblue")
-boxplot(sp2, col="yellow", add=TRUE, pch="+")
+boxplot(sp2, col="white", add=TRUE, pch="+")
