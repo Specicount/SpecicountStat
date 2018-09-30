@@ -2,9 +2,6 @@
 # setwd("./data/")
 
 # Load packages
-library(ggplot2)
-library(grid)
-library(neotoma)
 library(analogue)
 
 # Import data set
