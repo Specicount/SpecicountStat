@@ -1,4 +1,4 @@
-# Principal component analysis
+# canonical correspondence analysis
 # Load packages
 library(analogue)
 
