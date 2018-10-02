@@ -21,4 +21,4 @@ The data must in particular format.
 | --------- | -------- | -------------- | --------- | ----------- | ------------- | ------------------ | ------------- |
 |           |          |                |           |             |               |                    |               |
 
-http://192.168.64.137/BioDataStat/phpui/test.php
+http://192.168.64.137/BioDataStat/docs/R_Application_Specs.html
