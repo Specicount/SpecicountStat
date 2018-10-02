@@ -1,50 +1,74 @@
-#
-# This is a Shiny web application. You can run the application by clicking
-# the 'Run App' button above.
-#
-# Find out more about building applications with Shiny here:
-#
-#    http://shiny.rstudio.com/
-#
+library('shiny')
+library('analogue')
+library('vegan')
 
-library(shiny)
-
-# Define UI for application that draws a histogram
+# Define UI for data upload app ----
 ui <- fluidPage(
-   
-   # Application title
-   titlePanel("Old Faithful Geyser Data"),
-   
-   # Sidebar with a slider input for number of bins 
-   sidebarLayout(
-      sidebarPanel(
-         sliderInput("bins",
-                     "Number of bins:",
-                     min = 1,
-                     max = 50,
-                     value = 30)
-      ),
+  
+  # App title ----
+  titlePanel("Uploading Files"),
+  
+  # Sidebar layout with input and output definitions ----
+  sidebarLayout(
+    
+    # Sidebar panel for inputs ----
+    sidebarPanel(
       
-      # Show a plot of the generated distribution
-      mainPanel(
-         plotOutput("distPlot")
+      # Input: Select a file ----
+      fileInput("raw_file", "Choose CSV File",
+                multiple = TRUE,
+                accept = c("text/csv",
+                           "text/comma-separated-values,text/plain",
+                           ".csv")),
+      
+      # Horizontal line ----
+      tags$hr(),
+      
+      numericInput("obs", "Occurence:", 10, min = 1, max = 100),
+      verbatimTextOutput("value")
+      
+    ),
+    
+    # Main panel for displaying outputs ----
+    mainPanel(
+      
+      # Output: Tabset w/ plot, summary, and table ----
+      tabsetPanel(type = "tabs",
+                  tabPanel("Raw Plot", plotOutput("raw_plot")),
+                  tabPanel("Table", tableOutput("raw_data"))
       )
-   )
+      
+    )
+    
+  )
 )
 
-# Define server logic required to draw a histogram
+# Define server logic to read selected file ----
 server <- function(input, output) {
-   
-   output$distPlot <- renderPlot({
-      # generate bins based on input$bins from ui.R
-      x    <- faithful[, 2] 
-      bins <- seq(min(x), max(x), length.out = input$bins + 1)
-      
-      # draw the histogram with the specified number of bins
-      hist(x, breaks = bins, col = 'darkgray', border = 'white')
-   })
+  
+  output$contents <- renderTable({
+    
+    # input$raw_file will be NULL initially. After the user selects
+    # and uploads a file, head of that data file by default,
+    # or all rows if selected, will be shown.
+    
+    req(input$raw_file)
+    
+    df <- read.csv(input$raw_file$datapath,
+                   header = TRUE,
+                   sep = ",")
+    
+    return(df)
+    
+  })
+  
+  output$raw_data <- renderTable({
+    req(output$contents)
+    
+    return(contents)
+  })
+  
+  
 }
-
-# Run the application 
-shinyApp(ui = ui, server = server)
-
+# Run the app ----
+shinyApp(ui, server)
