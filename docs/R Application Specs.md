@@ -28,4 +28,4 @@ The data must in particular format.
 
 http://192.168.64.137/BioDataStat/docs/R_Application_Specs.html
 
-Access the shiny app at: http://192.168.64.137:3838/UI/
+Access the shiny app at: http://192.168.64.137:3838/StatApp/
