@@ -36,20 +36,29 @@ shinyServer(function(input, output, session) {
         core <- raw_data[, c(8:ncol(raw_data))]
         
         # Define y axis
-        ids <- raw_data$sample.ID
+        if (input$yl == "ID") {
+            ids <- raw_data$sample.ID
+        }
+        else if (input$yl == "Depth") {
+            ids <- raw_data$depth.cm
+        }
+        else {
+            ids <- raw_data$age.cal.yrs.BP
+        }
         
         # Filt the data above given occurance and maximum abundance
-        core.fltd <- chooseTaxa(core, n.occ = 5, max.abun = 10)
+        core.fltd <- chooseTaxa(core, n.occ = input$occ, max.abun = input$abun)
         
         raw_plot <- Stratiplot(
             ids ~ .,
             data = core.fltd,
             sort = "wa",
             type = c("h", "l", "g"),
-            ylab = 'Sample ID',
+            ylab = input$yl,
             xlab = 'Count'
         )
         
         return(raw_plot)
     })
+    
 })

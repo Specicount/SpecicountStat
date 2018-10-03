@@ -41,7 +41,8 @@ shinyUI(navbarPage(
         sidebarLayout(
             sidebarPanel(
                 numericInput("occ", "Occurence:", 5, min = 0),
-                numericInput("abun", "Maximum Abundance:", 100, min = 1)
+                numericInput("abun", "Maximum Abundance:", 0, min = 0),
+                selectInput("yl", "Y-Axis", c("ID", "Depth", "Age"))
             ),
             mainPanel(
                 plotOutput("raw_plot")
@@ -49,4 +50,5 @@ shinyUI(navbarPage(
             
         )
     )
+    
 ))
