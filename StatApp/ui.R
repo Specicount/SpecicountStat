@@ -67,6 +67,21 @@ shinyUI(navbarPage(
     ),
     
     tabPanel(
+        title = "CCA Plot",
+        sidebarLayout(
+            sidebarPanel(
+                numericInput("occ", "Occurence:", 0.05, min = 0),
+                numericInput("abun", "Maximum Abundance:", 0, min = 0),
+                selectInput("yl", "Y-Axis", c("ID", "Depth", "Age"))
+            ),
+            mainPanel(
+                plotOutput("cca_plot")
+            )
+            
+        )
+    ),
+    
+    tabPanel(
         title = "PCA Plot",
         sidebarLayout(
             sidebarPanel(

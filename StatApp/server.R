@@ -103,6 +103,16 @@ shinyServer(function(input, output, session) {
         )
     })
     
+    output$cca_plot <- renderPlot({
+        
+        raw_data <- get_data()
+        # Remove the total counts and spikes(first 8 columns)
+        core <- raw_data[, c(8:ncol(raw_data))]
+        
+        core.cca <- cca(core)
+        plot(core.cca, scaling = 1)
+    })
+    
     output$pca_plot <- renderPlot({
         
         raw_data <- get_data()
