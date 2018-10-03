@@ -17,8 +17,8 @@ plot(core.dca)
 
 shnam <- make.cepnames(names(core))
 
-# pl <- plot(core.dca, display = "sp")
-# identify(pl, "sp", labels = shnam)
-stems <- colSums(core)
-plot(core.dca, dis="sp", type="n")
-sel <- orditorp(core.dca, dis="sp", lab=shnam, priority=stems, pcol = "red", pch="+")
+pl <- plot(core.dca, display = "sp")
+identify(pl, "sp", labels = shnam)
+# stems <- colSums(core)
+# plot(core.dca, dis="sp", type="n")
+# sel <- orditorp(core.dca, dis="sp", lab=shnam, priority=stems, pcol = "red", pch="+")

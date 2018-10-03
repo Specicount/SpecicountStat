@@ -1,0 +1,24 @@
+---
+title: "MeetingLog20181003"
+author: "Zibo Wang"
+date: "10/3/2018"
+output: html_document
+---
+
+# Log
+## Changes
+1. species accu curve to each sample
+  50 fields of the samples
+  
+2. remove the grid lines of strat plot
+3. change vector to cross 
+4. name the sample by click interaction(identify function)
+5. change graph to vector image
+
+## Add
+1. eigen val for PCA and DCA curves
+2. change colors of the graphs
+3. export concentration data and percentage data
+
+## Misc
+export r code

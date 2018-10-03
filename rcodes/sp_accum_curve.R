@@ -3,17 +3,17 @@
 
 # Import Libaries
 library(vegan)
-
+library(data.table)
 # Import raw data set
 raw_data <-
   read.csv(file = "./data/LL2_pollen_raw_data.csv", head = TRUE, sep = ",")
 
 # Remove the total counts and spikes(first 8 columns)
 core <- raw_data[, c(8:ncol(raw_data))]
-
+core.t <- transpose(core)
 # Draw Species Accumulation Curve
-sp1 <- specaccum(core)
-sp2 <- specaccum(core, "random", permutations = 100)
+sp1 <- specaccum(core.t)
+sp2 <- specaccum(core.t, "random", permutations = 100)
 sp2
 summary(sp2)
 plot(sp1, ci.type="poly", col="blue", lwd=2, ci.lty=0, ci.col="lightblue")
@@ -33,4 +33,4 @@ boxplot(sp2, col = "yellow", border = "blue", lty=1, cex=0.3, add= TRUE)
 ## Use nls() methods to the list of models
 sapply(mods$models, AIC)
 
-mod <- cca(core)
+mod <- cca(core.t)
