@@ -49,6 +49,66 @@ shinyUI(navbarPage(
             )
             
         )
+    ),
+    
+    tabPanel(
+        title = "Percentage Data Plots",
+        sidebarLayout(
+            sidebarPanel(
+                numericInput("occ", "Occurence:", 0.05, min = 0),
+                numericInput("abun", "Maximum Abundance:", 0, min = 0),
+                selectInput("yl", "Y-Axis", c("ID", "Depth", "Age"))
+            ),
+            mainPanel(
+                plotOutput("pct_plot")
+            )
+            
+        )
+    ),
+    
+    tabPanel(
+        title = "PCA Plot",
+        sidebarLayout(
+            sidebarPanel(
+                numericInput("occ", "Occurence:", 0.05, min = 0),
+                numericInput("abun", "Maximum Abundance:", 0, min = 0),
+                selectInput("yl", "Y-Axis", c("ID", "Depth", "Age"))
+            ),
+            mainPanel(
+                plotOutput("pca_plot")
+            )
+            
+        )
+    ),
+    
+    tabPanel(
+        title = "DCA Plot",
+        sidebarLayout(
+            sidebarPanel(
+                numericInput("occ", "Occurence:", 0.05, min = 0),
+                numericInput("abun", "Maximum Abundance:", 0, min = 0),
+                selectInput("yl", "Y-Axis", c("ID", "Depth", "Age"))
+            ),
+            mainPanel(
+                plotOutput("dca_plot")
+            )
+            
+        )
+    ),
+    
+    tabPanel(
+        title = "Species Accumulation Curve",
+        sidebarLayout(
+            sidebarPanel(
+                numericInput("occ", "Occurence:", 0.05, min = 0),
+                numericInput("abun", "Maximum Abundance:", 0, min = 0),
+                selectInput("yl", "Y-Axis", c("ID", "Depth", "Age"))
+            ),
+            mainPanel(
+                plotOutput("sp_accum_curve")
+            )
+            
+        )
     )
     
 ))
