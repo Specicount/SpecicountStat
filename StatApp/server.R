@@ -23,7 +23,7 @@ shinyServer(function(input, output, session) {
     
     output$raw_data <- DT::renderDataTable({
         core <- get_data()
-        DT::datatable(core, options = list(pageLength = 25, searching = FALSE))
+        DT::datatable(core, options = list(pageLength = 10, searching = TRUE))
     })
     
     output$raw_plot <- renderPlot({
