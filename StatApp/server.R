@@ -44,7 +44,7 @@ shinyServer(function(input, output, session) {
         }
         
         # Filt the data above given occurance and maximum abundance
-        core.fltd <- chooseTaxa(core, n.occ = input$occ, max.abun = input$abun)
+        core.fltd <- chooseTaxa(core, n.occ = input$raw_occ, max.abun = input$raw_abun)
         
         raw_plot <- Stratiplot(
             ids ~ .,
@@ -87,7 +87,7 @@ shinyServer(function(input, output, session) {
         core <- pct_data[, c(9:ncol(raw_data))]
         
         # Filt the data using f maximum abundance attained and number of occurrences.
-        core.fltd <- chooseTaxa(core, n.occ = input$occ, max.abun = input$abun)
+        core.fltd <- chooseTaxa(core, n.occ = input$pct_occ, max.abun = input$pct_abun)
         
         # Draw Palaeoecological Stratigraphic Diagram with percentage data
         Stratiplot(
@@ -101,7 +101,6 @@ shinyServer(function(input, output, session) {
     })
     
     output$cca_plot <- renderPlot({
-        
         raw_data <- get_data()
         # Remove the total counts and spikes(first 8 columns)
         core <- raw_data[, c(8:ncol(raw_data))]
@@ -111,7 +110,6 @@ shinyServer(function(input, output, session) {
     })
     
     output$pca_plot <- renderPlot({
-        
         raw_data <- get_data()
         # Remove the total counts and spikes(first 8 columns)
         core <- raw_data[, c(8:ncol(raw_data))]
@@ -163,8 +161,15 @@ shinyServer(function(input, output, session) {
         sp2 <- specaccum(core, "random", permutations = 100)
         sp2
         summary(sp2)
-        plot(sp1, ci.type="poly", col="blue", lwd=2, ci.lty=0, ci.col="lightblue")
-        boxplot(sp2, col="white", add=TRUE, pch="+")
+        plot(
+            sp1,
+            ci.type = "poly",
+            col = "blue",
+            lwd = 2,
+            ci.lty = 0,
+            ci.col = "lightblue"
+        )
+        boxplot(sp2, col = "white", add = TRUE, pch = "+")
         
         ## Fit Lomolino model to the exact accumulation
         mod1 <- fitspecaccum(sp1, "lomolino")
@@ -175,8 +180,15 @@ shinyServer(function(input, output, session) {
         plot(mod1, add = TRUE, col=2, lwd=2)
         ## Fit Arrhenius models to all random accumulations
         mods <- fitspecaccum(sp2, "arrh")
-        plot(mods, col="hotpink")
-        boxplot(sp2, col = "yellow", border = "blue", lty=1, cex=0.3, add= TRUE)
+        plot(mods, col = "hotpink")
+        boxplot(
+            sp2,
+            col = "yellow",
+            border = "blue",
+            lty = 1,
+            cex = 0.3,
+            add = TRUE
+        )
         ## Use nls() methods to the list of models
         sapply(mods$models, AIC)
         
